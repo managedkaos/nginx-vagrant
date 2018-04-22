@@ -24,3 +24,12 @@ vagrant up
 Open a browser to port 9090 on localhost: http://localhost:9191.
 
 To get the PHP configuration, open a browser to http://localhost:9191/info.php.
+
+## No Provisioning
+To boot the VM without installing, use the `--no-provisioning` switch:
+
+```
+vagrant up --no-provisioning
+```
+
+VM will boot with network configuration but will not update any configuration files or install nginx.
