@@ -7,7 +7,7 @@ Install the nginx webserver on a VM.
 To run Nginx on a Ubuntu based VM:
 ```
 git clone https://github.com/managedkaos/nginx-vagrant
-cd nginx-vagrant/ubuntu
+cd nginx-vagrant/Ubuntu
 vagrant up
 ```
 
@@ -18,7 +18,7 @@ To get the PHP configuration, open a browser to http://localhost:9090/info.php.
 To run Nginx on a Ubuntu based VM:
 ```
 git clone https://github.com/managedkaos/nginx-vagrant
-cd nginx-vagrant/centos
+cd nginx-vagrant/CentOS
 vagrant up
 ```
 
