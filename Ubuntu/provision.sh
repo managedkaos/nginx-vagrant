@@ -11,6 +11,19 @@ cp /home/vagrant/default.conf /etc/nginx/sites-available/default
 cp /home/vagrant/info.php /var/www/html
 chmod +r /var/www/html/info.php
 
-# Restart and heck the status of everything
+# Secure MySQL 
+# !!Not for production use!! :D
+mysql_secure_installation <<EOF
+n
+abcdefghijklmnopqrstuvwxyz1234567890
+abcdefghijklmnopqrstuvwxyz1234567890
+y
+y
+y
+y
+y
+EOF
+ 
+# Restart and check the status of everything
 systemctl restart nginx
 systemctl status nginx.service php7.2-fpm.service mariadb.service --no-pager
