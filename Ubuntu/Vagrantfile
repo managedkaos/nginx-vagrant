@@ -3,6 +3,7 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 80, host: 9090
   config.vm.provision "file", source: "default.conf", destination: "default.conf"
   config.vm.provision "file", source: "info.php", destination: "info.php"
+  config.vm.provision "file", source: "list_nginx_files.sh", destination: "list_nginx_files.sh"
   config.vm.provision "shell", path: "provision.sh" 
 end
 

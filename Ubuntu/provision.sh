@@ -27,3 +27,4 @@ EOF
 # Restart and check the status of everything
 systemctl restart nginx
 systemctl status nginx.service php7.2-fpm.service mariadb.service --no-pager
+chmod +x /home/vagrant/list_nginx_files.sh
