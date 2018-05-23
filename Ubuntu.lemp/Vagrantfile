@@ -12,6 +12,6 @@ Vagrant.configure("2") do |config|
 end
 
 puts "-------------------------------------------------"
-puts "Default Homepage : http://#{guest_ip}:#{host_port}"
-puts "PHP Info         : http://#{guest_ip}:#{host_port}/info.php"
+puts "Default Homepage : http://#{guest_ip}"
+puts "PHP Info         : http://#{guest_ip}/info.php"
 puts "-------------------------------------------------"
