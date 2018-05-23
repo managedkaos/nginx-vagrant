@@ -12,4 +12,5 @@ end
 
 puts "-------------------------------------------------"
 puts "Default Homepage : http://#{guest_ip}"
+puts "Default Homepage : http://localhost:#{host_port}"
 puts "-------------------------------------------------"
